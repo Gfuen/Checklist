@@ -9,6 +9,15 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
+1. Things to Remember, Tips, and such ....
+2. Ports and Services
+  >> FTP
+  >> SSH
+3. Windows
+4. Windows Privilege Escalation
+5. Linux
+6. Linux Privilege Escalation
+
 ```markdown
 Syntax highlighted code block
 
@@ -18,13 +27,6 @@ Syntax highlighted code block
 
 - Bulleted
 - List
-
-1. Things to Remember, Tips, and such ....
-2. Ports and Services
-3. Windows
-4. Windows Privilege Escalation
-5. Linux 
-6. Linux Privilege Escalation
 
 **Bold** and _Italic_ and `Code` text
 
