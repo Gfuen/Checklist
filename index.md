@@ -1,4 +1,5 @@
-## Welcome to GitHub Pages
+## Welcome to the OSCP Checklist
+## Created by: Gregory Fuentes
 
 You can use the [editor on GitHub](https://github.com/Gfuen/Checklist/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
