@@ -19,8 +19,12 @@ Syntax highlighted code block
 - Bulleted
 - List
 
-1. Numbered
-2. List
+1. Things to Remember, Tips, and such ....
+2. Ports and Services
+3. Windows
+4. Windows Privilege Escalation
+5. Linux 
+6. Linux Privilege Escalation
 
 **Bold** and _Italic_ and `Code` text
 
