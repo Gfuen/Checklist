@@ -11,7 +11,7 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 
 1. Things to Remember, Tips, and such ....
 2. Ports and Services
-  >> FTP
+  \>\\> FTP
   >> SSH
 3. Windows
 4. Windows Privilege Escalation
