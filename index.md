@@ -9,14 +9,14 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-1. [Things to Remember](./"Things to remember"/remember.md)
-2. [Ports and Services](./"Ports and Services"/ports.md)
+1. [Things to Remember](./Things to remember/remember.md)
+2. [Ports and Services](./Ports and Services/ports.md)
   - FTP
   - SSH
 3. [Windows](./Windows/windows.md)
-4. [Windows Privilege Escalation](./"Windows PrivEsc"/WindowsPrivEsc.md)
+4. [Windows Privilege Escalation](./Windows PrivEsc/WindowsPrivEsc.md)
 5. [Linux](./Linux/Linux.md)
-6. [Linux Privilege Escalation](./"Linux PrivEsc"/LinuxPrivEsc.md)
+6. [Linux Privilege Escalation](./Linux PrivEsc/LinuxPrivEsc.md)
 
 ```markdown
 Syntax highlighted code block
