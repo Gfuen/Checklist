@@ -10,7 +10,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 1. Things to Remember, Tips, and such ....
-1. [Things to Remember]("Things to remember"/remember.md)
+1. [Things to Remember]("Things to remember"\remember.md)
 2. Ports and Services
   - FTP
   - SSH
