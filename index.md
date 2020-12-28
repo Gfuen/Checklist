@@ -14,9 +14,9 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
   - FTP
   - SSH
 3. [Windows](./Windows/windows.md)
-4. [Windows Privilege Escalation](./Windows PrivEsc/WindowsPrivEsc.md)
-5. [Linux](./Linux/Linux.md)
-6. [Linux Privilege Escalation](./Linux PrivEsc/LinuxPrivEsc.md)
+4. [Windows Privilege Escalation](./Windows PrivEsc/windowsprivEsc.md)
+5. [Linux](./Linux/linux.md)
+6. [Linux Privilege Escalation](./Linux PrivEsc/linuxprivEsc.md)
 
 ```markdown
 Syntax highlighted code block
