@@ -137,3 +137,16 @@ nc -nv <ip> <port> > file/to/recv
 Curl
 curl http://<ip>/file_name --output file_name
 ```
+
+* Password Policy
+
+```
+grep "^PASS_MAX_DAYS\|^PASS_MIN_DAYS\|^PASS_WARN_AGE\|^ENCRYPT_METHOD" /etc/login.defs
+```
+
+* Linux PrivEsc Guide
+
+```
+// https://noobsec.net/
+// https://book.hacktricks.xyz/linux-unix/privilege-escalation
+```

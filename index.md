@@ -54,3 +54,6 @@
 	- [Webshell payloads](./Shell Payloads/webshells.md)
 	- [Windows Shell payloads](./Shell Payloads/windowsshell.md)
 	- [Linux Shell payloads](./Shell Payloads/linuxshell.md)
+7. [Writeups](#)
+  - [Sample](./Writeups/sample.md)
+  - [Beta](./Writeups/beta.md)

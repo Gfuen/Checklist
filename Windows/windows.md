@@ -27,6 +27,12 @@ dir /s <filename> # or extensions
 Get-ChildItem -Path C:\ -Include *filename_wildcard* -Recurse -ErrorAction SilentlyContinue
 ```
 
+## Find Large Files over 50MB
+
+```
+find / -type f -size +50M
+```
+
 ## Display Environment Variables
 
 ```
