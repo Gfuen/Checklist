@@ -58,6 +58,7 @@
   - [Active Directory](./Privilege Escalation/activedirectory.md)
   - [Linux](./Privilege Escalation/linux.md)
   - [Windows](./Privilege Escalation/windows.md)
+  - [Server](./Privilege Escalation/server.md)
 6. [Shell Payloads](#)
 	- [Webshell payloads](./Shell Payloads/webshells.md)
 	- [Windows Shell payloads](./Shell Payloads/windowsshell.md)

