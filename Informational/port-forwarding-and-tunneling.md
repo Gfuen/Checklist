@@ -1,5 +1,9 @@
 ## SSH Port Forwarding
 
+
+Make sure /etc/ssh/sshd_config has forwarding enabled and restart sshd 
+look at firewall rules for ports of target
+
 __Local Forwarding__ - Binding to local machine port 8080 and forwarding to 10.10.10.203 on port 80 via vps (only localhost can connect)
 
 ```

@@ -1,13 +1,9 @@
 ## Welcome to the OSCP Checklist
 ## Created by: Gregory Fuentes
 
-You can use the [editor on GitHub](https://github.com/Gfuen/Checklist/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### OSCP Checklist Items
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 1. [Useful Commands](./Useful Commands/useful-commands.md)
 2. [Things to Remember](./Things to remember/remember.md)
@@ -31,7 +27,14 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
   - [postgres](./Exploit/postgres.md)
   - [smtp](./Exploit/smtp.md)
   - [ssh](./Exploit/ssh.md)
+  - [docker](./Exploit/docker.md)
+  - [mysql](./Exploit/mysql.md)
   - [web server](./Exploit/webserver.md)
+  - [ldap](./Exploit/ldap.md)
+  - [mongodb](./Exploit/mongodb.md)
+  - [redis](./Exploit/redis.md)
+  - [ndmp](./Exploit/ndmp.md)
+  - [rpc](./Exploit/rpc.md)
 4. [Ports and Services](#)
   - [Common Ports and Services](./Ports and Services/common.txt)
   - [All Ports and Services](./Ports and Services/allports.txt)
