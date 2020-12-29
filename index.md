@@ -9,36 +9,39 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-1. [Things to Remember](./Things to remember/remember.md)
-2. [Ports and Services](./Ports and Services/ports.md)
-  - FTP
-  - SSH
+1. [Useful Commands](./Useful Commands/useful-commands.md)
+2. [Things to Remember](./Things to remember/remember.md)
+3. [Informational](#)
+	- [Active Directory Theory](./Informational/active-directory-theory.md)
+	- [Antivirus Evasion](./Informational/antivirus-evasion.md)
+	- [Port Forwarding and Tunneling](./Informational/port-forwarding-and-tunneling.md)
+	- [Buffer Overflow](./Informational/buffer-overflow.md)
+	- [SMB and NETBIOS](./Informational/smb-netbios.md)
+	- [Distributed Ruby](./Informational/druby.md)
+	- [R-Services](./Informational/r-services.md)
+	- [RMI and RPC](./Informational/rmi-rpc.md)
+	- [Cross-Site Tracing](./Informational/xst.md)
+	- [AJP and Coyote](./Informational/ajp-coyote.md)
+	- [distccd/Xcode](./Informational/distccd-xcode.md)
+3. [Exploit](#)
+  - [ftp](./Exploit/ftp.md)
+  - [irc](./Exploit/irc.md)
+  - [mariadb-mysql](./Exploit/mariadb-mysql.md)
+  - [nfs](./Exploit/nfs.md)
+  - [postgres](./Exploit/postgres.md)
+  - [smtp](./Exploit/smtp.md)
+  - [ssh](./Exploit/ssh.md)
+  - [web server](./Exploit/webserver.md)
+4. [Ports and Services](#)
+  - [Common Ports and Services](./Ports and Services/common.md)
+  - [All Ports and Services](./Ports and Services/allports.md)
 3. [Windows](./Windows/windows.md)
-4. [Windows Privilege Escalation](./Windows PrivEsc/windowsprivesc.md)
-5. [Linux](./Linux/linux.md)
-6. [Linux Privilege Escalation](./Linux PrivEsc/linuxprivesc.md)
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Gfuen/Checklist/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+4. [Linux](./Linux/linux.md)
+5. [Privilege Escalation](#)
+  - [Active Directory](./Privilege Escalation/activedirectory.md)
+  - [Linux](./Privilege Escalation/linux.md)
+  - [Windows](./Privilege Escalation/windows.md)
+6. [Shell Payloads](#)
+	- [Webshell payloads](./Shell Payloads/webshells.md)
+	- [Windows Shell payloads](./Shell Payloads/windowsshell.md)
+	- [Linux Shell payloads](./Shell Payloads/linuxshell.md)
