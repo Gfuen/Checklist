@@ -7,7 +7,7 @@
 | clip
 ```
 
-## Get computes IP Address
+## Get computers IP Address
 
 ```
 ipconfig|find "IPv4"

