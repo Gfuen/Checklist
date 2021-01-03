@@ -21,3 +21,5 @@
 * fcrackzip to crack zip files
 
 * python gnumeric package for converting xls files to csv
+
+* FTP File transfer set to binary when doing a file transfer
