@@ -2,7 +2,7 @@
 ## Created by: Gregory Fuentes
 
 
-### OSCP Checklist Items
+### OSCP Checklist 
 
 
 1. [Useful Commands](./Useful Commands/useful-commands.md)
@@ -49,6 +49,7 @@
   - [apache](./Exploit/apache.md)
   - [apache-tomcat](./Exploit/apache-tomcat.md)
   - [dns](./Exploit/dns.md)
+  - [vnc](./Exploit/vnc.md)
 4. [Ports and Services](#)
   - [Common Ports and Services](./Ports and Services/common.txt)
   - [All Ports and Services](./Ports and Services/allports.txt)
@@ -59,6 +60,7 @@
   - [Linux](./Privilege Escalation/linux.md)
   - [Windows](./Privilege Escalation/windows.md)
   - [Server](./Privilege Escalation/server.md)
+  - [Transfer Files](./Privilege Escalation/transfer-files.md)
 6. [Shell Payloads](#)
 	- [Webshell payloads](./Shell Payloads/webshells.md)
 	- [Windows Shell payloads](./Shell Payloads/windowsshell.md)
