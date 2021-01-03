@@ -17,3 +17,7 @@
 * TGT can only be used on the machine it was created for, but the TGS potentially offers more flexibility.
 
 * The user and group permissions in TGS are not verified by the application. It blindly trusts it.
+
+* fcrackzip to crack zip files
+
+* python gnumeric package for converting xls files to csv

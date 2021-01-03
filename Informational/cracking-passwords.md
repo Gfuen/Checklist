@@ -24,10 +24,13 @@ Check hash format for reference when trying to crack
     // https://hashcat.net/wiki/doku.php?id=example_hashes
 
 hash-identifier [hash]
-john hashes.txt
+USE HASHCAT -a 0 for fast password cracking
 hashcat -m 500 -a 0 -o output.txt –remove hashes.txt /usr/share/wordlists/rockyou.txt
 hashcat -m 1000 dump.txt -o output.txt --remove -a 3 ?u?l?l?d?d?d?d
     Brute force crack for NTLM hashes with an uppercase, lowercase, lowercase, and 4 digit mask
 List of hash types and examples for hashcat https://hashcat.net/wiki/doku.php?id=example_hashes 
 // https://hashkiller.co.uk has a good repo of already cracked MD5 and NTLM hashes
+
+OffSec has their own official cracking tool here -> https://cracker.offensive-security.com/
+Priority code is 1337123456
 ```

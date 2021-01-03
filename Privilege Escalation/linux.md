@@ -125,19 +125,6 @@ Command to change specified UUID of new user to '1014'
 Command: sudo sed -i -e 's/1001/1014/g' /etc/passwd
 ```
 
-* File Transfer through HTTP
-
-```
-Wget
-wget http://<ip>/file_name -O /path/to/save/file
-
-Netcat
-nc -nv <ip> <port> > file/to/recv
-
-Curl
-curl http://<ip>/file_name --output file_name
-```
-
 * Password Policy
 
 ```
