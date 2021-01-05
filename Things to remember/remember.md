@@ -23,3 +23,5 @@
 * python gnumeric package for converting xls files to csv
 
 * FTP File transfer set to binary when doing a file transfer
+
+* Metasploit shells dont always default to meterpreter shells

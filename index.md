@@ -61,6 +61,7 @@
   - [Windows](./Privilege Escalation/windows.md)
   - [Server](./Privilege Escalation/server.md)
   - [Transfer Files](./Privilege Escalation/transfer-files.md)
+  - [Persistence](./Privilege Escalation/persistence.md)
 6. [Shell Payloads](#)
 	- [Webshell payloads](./Shell Payloads/webshells.md)
 	- [Windows Shell payloads](./Shell Payloads/windowsshell.md)
