@@ -25,3 +25,5 @@
 * FTP File transfer set to binary when doing a file transfer
 
 * Metasploit shells dont always default to meterpreter shells
+
+* Ping doesnt always work trying to see if host is up, try nmap or host/nslookup

