@@ -155,6 +155,18 @@ echo !powershell.exe > ftpcommands.txt && ftp -s:ftpcommands.txt
 dir /r | find ":$DATA"
 ```
 
+* Check for all hidden files and put them in file hidden.txt
+
+```
+dir /S /A:H > hidden.txt
+```
+
+* List all hidden files in directory
+
+```
+dir /a
+```
+
 * Windows PrivEsc Guide
 
 ```
