@@ -27,3 +27,9 @@
 * Metasploit shells dont always default to meterpreter shells
 
 * Ping doesnt always work trying to see if host is up, try nmap or host/nslookup
+
+* Try multiple types of sql injection including union select and auth bypass
+
+* Try stagers with shell payloads and recieve shell through exploit/multi/handler (allowed on exam if not meterpreter shell)
+
+* Check path where reverse shell was uploaded if you need to go to it on browser
