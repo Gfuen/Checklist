@@ -46,7 +46,8 @@ cat ~/.bash_history
 * Enumerating Running Processes and Services
 
 ```
-ps axu
+ps axuww
+#ww for wider output
 ```
 
 * Enumerating Networking Information

@@ -33,3 +33,5 @@
 * Try stagers with shell payloads and recieve shell through exploit/multi/handler (allowed on exam if not meterpreter shell)
 
 * Check path where reverse shell was uploaded if you need to go to it on browser
+
+* Check all version numbers of port services. Use VRFY or default smpt user wordlist to verify user and user emails through smtp. Use echo command to append to a scheduled task for privilege escalation
