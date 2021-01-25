@@ -30,8 +30,14 @@
 
 * Try multiple types of sql injection including union select and auth bypass
 
-* Try stagers with shell payloads and recieve shell through exploit/multi/handler (allowed on exam if not meterpreter shell)
+* Try stagers with shell payloads and recieve shell through exploit/multi/handler on msf (allowed on exam if not meterpreter shell)
 
 * Check path where reverse shell was uploaded if you need to go to it on browser
 
 * Check all version numbers of port services. Use VRFY or default smpt user wordlist to verify user and user emails through smtp. Use echo command to append to a scheduled task for privilege escalation
+
+* File <file> to check what file you got and search on how to open for passwords
+
+* Powershell Invoke Command on local reverse shell to make it easier than call back to netcat
+
+* Use SMB to authenticate with user credentials on Windows machines

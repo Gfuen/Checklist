@@ -76,3 +76,14 @@ List folder contents: Permits viewing and listing of files and subfolders as wel
 Read: Allows users to view the folder and subfolder contents.
 Write: Allows users to add files and subfolders, allows you to write to a file.
 ```
+
+## Powershell
+
+```
+Run Powershell script
+powershell [-noexit] -executionpolicy bypass -File <Filename>
+
+Check Powershell version
+$PSVersionTable.PSVersion
+get-host
+```

