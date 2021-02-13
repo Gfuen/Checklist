@@ -18,6 +18,9 @@ Add a bang if needed
 ## Hashes
 
 ```
+John Configuration file
+/etc/john/john.conf
+
 Use following website to crack unsalted hashes
     // https://crackstation.net/
 Check hash format for reference when trying to crack

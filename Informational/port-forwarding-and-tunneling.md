@@ -57,3 +57,20 @@ htc --forward-port 8888 10.11.0.128:1234
 // http server 
 hts --forward-port localhost:8888 1234
 ```
+
+## Configuration Files
+
+```
+Rinetd Conf
+/etc/rinetd.conf
+
+Samba/SMB Conf (Must be set to SMBv2 for Windows 2016+)
+/etc/samba/smb.conf
+
+Proxychains
+/etc/proxychains.conf
+
+SSHD/SSHD
+/etc/sshd_config.conf
+/etc/ssh_config.conf
+```

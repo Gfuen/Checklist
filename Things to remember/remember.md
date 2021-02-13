@@ -41,3 +41,5 @@
 * Powershell Invoke Command on local reverse shell to make it easier than call back to netcat
 
 * Use SMB to authenticate with user credentials on Windows machines
+
+* Use 00000000000000000000000000000000 for NT Hash for psexec or wmiexec if passing the hash if there is none for user on box
