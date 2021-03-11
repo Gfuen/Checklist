@@ -43,3 +43,7 @@
 * Use SMB to authenticate with user credentials on Windows machines
 
 * Use 00000000000000000000000000000000 for NT Hash for psexec or wmiexec if passing the hash if there is none for user on box
+
+* If SeImpersonate or SeAssignPrimaryToken privileges in Windows user privileges use JuicyPotato along with clsid
+
+* Try to do file upload in a known directory and then run reverse shell from there if file location is unknown
