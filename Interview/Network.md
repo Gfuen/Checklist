@@ -87,7 +87,6 @@ IPsec transport mode - payload of each packet is encrypted but the original IP h
 Network port is a virtual location where data goes in a computer
 
 
-
 ## Discontiguous and Contiguous network
 
 A Discontiguous Network topology is where you have some network (172.16.0.0) that is divided into two parts (perhaps 172.16.0.0-100.0 and 172.16.101.0-200.0) and to go
@@ -160,3 +159,42 @@ Security risks - no authentication so any client can join a network
 
 TCP - Connection oriented protocol such as email or a download
 UDP - Connectionless oriented protocol such as phone call or tv
+
+## What kind of penetration test can be done with the Diffie Hellman exchange
+
+A hacker can use the man in the middle attack with the Diffie Hellman exchange since neither side of the exchange is authenticated. Users can use SSL or encryption between messages to add security
+
+## What is the difference between asymmetric and symmetric encryption
+
+Symmetric encryption uses the same key for decryption and encryption
+
+Asymmetric uses different keys
+
+## Difference between Penetration test vs Vulnerability Test
+
+Vulnerability test looks for knwon vulnerabilites in your systems and report potential exposures
+
+Penetration tests are intended to exploit weaknesses in the architecture of your network and determine the degree to how far an attack can get access to your assets
+
+## Different types of penetration tests
+
+-Wireless
+-Network
+-Social Engineering
+-Physical
+-Firewall
+-Web Application
+-Cloud
+-Internal (Inside network)
+-External (Outside network)
+
+
+## OSI Model
+
+Application Layer
+Presentation Layer
+Session Layer
+Transport Layer
+Network Layer
+Data Link Layer
+Physical Layer

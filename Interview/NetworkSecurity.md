@@ -11,7 +11,7 @@ website - website can be targeted by DDoS attack then filtered will be best beca
 
 ## How exactly does traceroute/tracert work at the protocol level?
 
-Traceroute works by sending a packet to an open UDP port on a destination machine. The router then discards the packet and sends off an ICMP notification packet to the original host with the message that the TTL expired from the router. 
+Traceroute works by sending a packet from a host computer to a remote machine to determine the route. Its used to identify if packets are redirected, take too long, or if the number of hops used to send traffic to a host
 
 ## What is a buffer overflow
 

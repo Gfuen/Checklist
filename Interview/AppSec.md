@@ -95,3 +95,74 @@ DOM - Injected payload modifies the DOM in the victims browser used by the origi
 ## What are the common defenses against XSS?
 
 Input validation and Output Sanitization
+
+## What is an open redirect vulnerability
+
+An Open redirect is when a web application or server uses an unvalidated user submitted link to redirect the user to a given website or page
+
+## Which cookie security flags exist
+
+HTTPOnly
+Secure Flag
+SameSite
+
+## Common file upload restrictions
+
+-Insert Nullbyte %x20
+-Add double extension rev.php.php
+-CamelCase rev.pHp
+
+## What is SQL Injection
+
+SQL Injection is a web security vulnerability that allows an attacker to interfere with the queries that an application makes to its database. It generally allows an attackers 
+to view data that they are not normally able to retrieve.
+
+## How to prevent SQL Injection
+
+Most instances of SQL Injection can be prevented by using parameterized queries instead of string concatenation within the query
+
+The following code is vulnerable to SQL injection because the user input is concatenated directly into the query:
+
+String query = "SELECT * FROM products WHERE category = '"+ input + "'";
+
+Statement statement = connection.createStatement();
+
+ResultSet resultSet = statement.executeQuery(query);
+
+This code can be easily rewritten in a way that prevents the user input from interfering with the query structure:
+
+PreparedStatement statement = connection.prepareStatement("SELECT * FROM products WHERE category = ?");
+
+statement.setString(1, input);
+
+ResultSet resultSet = statement.executeQuery();
+
+## What is XXE and how the payloads work
+
+XML External entity injection is a web security vulnerability that allows to interfere with an applicatios processing of XML data. It often allows an attacker to view files on the 
+application server filesystem, and to interact with any backend or external systems that the application itself can access
+
+In some situations an attacker can escalate an XXE attack to compromise the underlying server or other backend infrastructure to perform SSRF attacks
+
+For example, suppose a shopping application checks for the stock level of a product by submitting the following XML to the server:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<stockCheck><productId>381</productId></stockCheck>
+
+The application performs no particular defenses against XXE attacks, so you can exploit the XXE vulnerability to retrieve the /etc/passwd file by submitting the following XXE payload:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "file:///etc/passwd"> ]>
+<stockCheck><productId>&xxe;</productId></stockCheck>
+
+This XXE payload defines an external entity &xxe; whose value is the contents of the /etc/passwd file and uses the entity within the productId value. This causes the application's response to include the contents of the file:
+
+Invalid product ID: root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+
+DOS attack with Billion Laughs Attack
+
+## How to prevent XEE
+
+Disable resolution of external entities and disable support for XInclude. Config for safer XML parsing.

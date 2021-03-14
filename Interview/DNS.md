@@ -69,3 +69,14 @@ Right click the properties option
 Select and check the IPv4 options and click the properties option under that
 Type in Preferred DNS Server IP address under General tab
 Click OK
+
+## Does TLS use asymmetric or symmetric encryption
+
+SSL/TLS uses RSA Asymmetric Encryption Algorithm to establish a secure client-server session
+Symmetric Encryption Algorithm to exchange information securely over the established secured session (also called as “SSL Handshake”) between server and client.
+
+In Asymmetric Encryption Algorithm, the sender needs Public key to encrypt the message and the receiver need Private Key to decrypt the message.
+In Symmetric Encryption Algorithm, Both sender and receiver need single Symmetric session key to encrypt and decrypt data
+
+
+
