@@ -56,3 +56,18 @@ Copy Objects
 
 aws s3 cp s3://bucket-name/example s3://my-bucket/
 aws s3 cp filename.txt s3://bucket-name
+
+## Managed and Inline policies
+
+Managed policies
+
+Standalone policy that is creaed and administered by AWS. Standalone policy means that the policy has its own Amazon Resource Name that includes the policy name. 
+AWS Managed policies are designed to provide permissions for many common use cases such as AmazonDynameDBFullAccess
+
+Customer Managed policies
+
+You can create standalone policies that you administer in your own AWS account, which we refer to as customer managed policies. You can then attach the policies to multiple principal entities in your AWS account. When you attach a policy to a principal entity you give the entity the permissions that are defined in the policy
+
+Inline policies
+
+An inline policy is a policy thats embedded in an IAM identity. That is the policy is an inherent part of the identity. You can create a policy and embed it in a identity, either when you create the identity or later

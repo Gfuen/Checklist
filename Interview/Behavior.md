@@ -17,3 +17,16 @@ What is the biggest achievement Rhino Security has made?
 
 What is the vision here at Rhino Security?
 
+
+
+## See yourself in 5 , 10 years
+
+5 years - Senior Penetration tester with CVEs under my belt and a couple of certifications
+
+10 years - Leading Penetration Testing engagements and mentoring
+
+## Times you had to improvise or faced adversity
+
+Improvise
+
+got initial access to box but couldnt privilege escalate for windows box, noticed user alice which had given credentials and did a remote port forward with psexec.py from impacket
